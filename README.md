@@ -1,5 +1,4 @@
 ## <div align="center">🖨 repository-template</div>
-
 <div align="center">
     <kbd>
         <a href="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml" target="_blank"><img src="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
