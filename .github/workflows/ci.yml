@@ -18,6 +18,8 @@ concurrency:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
       - name: Check out the codebase
         uses: actions/checkout@v4.2.2
@@ -25,4 +27,5 @@ jobs:
       - name: Run megalinter
         uses: oxsecurity/megalinter/flavors/cupcake@v8.8.0
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MEGALINTER_CONFIG: .github/linters/.megalinter.yml
