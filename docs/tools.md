@@ -1,12 +1,15 @@
 # Tools
-## Megalinter
-[Megalinter](https://github.com/oxsecurity/megalinter) is used to ensure code quality and consistency.\
-It is configured in the `.github/linters/.megalinter.yml` file.
-
-
 ## Dependabot
 [Dependabot](https://github.com/dependabot) is used to keep dependencies (like GitHub Actions, Python packages) up to date.\
 It is configured in the `.github/dependabot.yml` file.
+
+## Just
+[Just](https://github.com/casey/just) is a command runner that helps with invoking commands in a consistent and more concise way.\
+It is configured in the `justfile` file.\
+
+## Megalinter
+[Megalinter](https://github.com/oxsecurity/megalinter) is used to ensure code quality and consistency.\
+It is configured in the `.github/linters/.megalinter.yml` file.
 
 
 ## Pre-Commit
