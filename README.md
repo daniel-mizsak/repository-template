@@ -1,4 +1,5 @@
 # <div align="center">🖨 repository-template</div>
+
 <div align="center">
     <kbd>
         <a href="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml" target="_blank"><img src="https://github.com/daniel-mizsak/repository-template/actions/workflows/ci.yml/badge.svg" alt="build status"></a>
@@ -7,16 +8,18 @@
     </kbd>
 </div>
 
-
 ## Overview
+
 Template for repository configurations.
 
-
 ## Getting started
+
 Detailed documentation of components:
+
 - [tools](docs/tools.md)
 
 The next topic.
+
 <details>
 <summary>Some details</summary>
 <br>
@@ -27,6 +30,7 @@ Example code snippet:
 ```bash
 export HELLO=world
 ```
+
 </details>
 
 Additional information.
