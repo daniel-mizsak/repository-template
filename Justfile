@@ -2,11 +2,11 @@
     just --list --unsorted
 
 # lifecycle
-[group('lifecycle')]
+[group("lifecycle")]
 clean:
     find . -name ".DS_Store" -type f -delete
 
 # quality assurance
-[group('qa')]
+[group("qa")]
 pre-commit:
     pre-commit run --all-files
