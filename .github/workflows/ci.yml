@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "0 12 * * 6" # Every Saturday at 12:00
 
-permissions: read-all
+permissions: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,15 +17,9 @@ concurrency:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: write
-    steps:
-      - name: Check out the codebase
-        uses: actions/checkout@v5.0.0
-
-      - name: Run megalinter
-        uses: oxsecurity/megalinter/flavors/cupcake@v9.1.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MEGALINTER_CONFIG: .github/linters/.megalinter.yml
+    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@v1
+    with:
+      megalinter-config: "./.github/linters/.megalinter.yml"
