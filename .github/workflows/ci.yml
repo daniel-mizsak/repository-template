@@ -20,6 +20,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@fab697c3e26ec8a790b09b88f83191867ce76d3b # v1.3.2
+    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@ae7973e16904f1318b7cac3c57ce011e7b6267e3 # v1.4.0
     with:
       megalinter-config: "./.github/linters/.megalinter.yml"
