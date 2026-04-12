@@ -1,9 +1,9 @@
 # Tools
 
-## Dependabot
+## Renovate
 
-[Dependabot](https://github.com/dependabot) is used to keep dependencies (like GitHub Actions, Python packages) up to date.\
-It is configured in the `.github/dependabot.yml` file.
+[Renovate](https://github.com/renovatebot/renovate) is used to keep dependencies like GitHub Actions, pre-commit hooks (or language packages) up to date.\
+It is configured in the `.github/renovate.json5` file and requires Renovate to be enabled for the repository or organization.
 
 ## Just
 
