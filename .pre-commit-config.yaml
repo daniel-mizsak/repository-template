@@ -4,10 +4,6 @@
 
 # exclude: ""
 
-# pre-commit ci
-ci:
-  autoupdate_schedule: monthly
-
 # pre-commit
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -30,9 +26,15 @@ repos:
     hooks:
       - id: actionlint
 
+  # zizmor
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.23.1
+    hooks:
+      - id: zizmor
+
   # yamllint
   - repo: https://github.com/adrienverge/yamllint.git
-    rev: v1.38.0
+    rev: v1.37.1
     hooks:
       - id: yamllint
         args: [--config-file=.github/linters/.yamllint.yml, --strict]
@@ -45,6 +47,6 @@ repos:
 
   # codespell
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.4.2
+    rev: v2.4.1
     hooks:
       - id: codespell
