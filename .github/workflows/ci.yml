@@ -16,10 +16,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  prek:
+    permissions:
+      contents: read
+    uses: daniel-mizsak/workflows/.github/workflows/prek.yml@5264b813cd3b482136d8e33ba9a1e69c2c4b0c64 # v2.0.0
+
   lint:
     permissions:
       contents: read
       pull-requests: write
-    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@ae7973e16904f1318b7cac3c57ce011e7b6267e3 # v1.4.0
+    uses: daniel-mizsak/workflows/.github/workflows/lint.yml@5264b813cd3b482136d8e33ba9a1e69c2c4b0c64 # v2.0.0
     with:
       megalinter-config: "./.github/linters/.megalinter.yml"
