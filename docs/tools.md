@@ -8,7 +8,7 @@ It is configured in the `.github/renovate.json5` file and requires Renovate to b
 ## Just
 
 [Just](https://github.com/casey/just) is a command runner that helps with invoking commands in a consistent and more concise way.\
-It is configured in the `justfile` file.\
+It is configured in the `justfile` file.
 
 ## Megalinter
 
