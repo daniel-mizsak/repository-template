@@ -4,11 +4,11 @@
 .DS_Store
 
 # Development files
-megalinter-reports
+megalinter-reports/
 
 # Environments
 .env
-.venv
+.venv/
 
 # IDE
-.vscode
+.vscode/
